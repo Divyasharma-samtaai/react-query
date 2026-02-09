@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
-import { searchProducts } from "../api/productapi";
+import { searchProducts } from "../../services/productapi";
 import "./ProductSearch.css";
 
 interface Product {
