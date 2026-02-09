@@ -35,16 +35,18 @@
 
 /* Product list wrapper */
 .product-list {
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* ⭐ 3 items per row */
+  gap: 24px;
+  justify-content: center; /* centers grid */
 }
 
 /* Product card */
 .product-card {
-  width: 520px; /* ⭐ fixed card width */
-  height: 420px;
+  width: 260px; /* ⭐ fixed card width */
+  height: 350px;
   margin: 0 auto; /* ⭐ center each card */
-  border: 1px solid #e0e0e0;
+  border: 1px solid #eacece;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -53,7 +55,7 @@
   padding: 12px;
   text-align: center;
   justify-content: center;
-  background-color: #fff;
+  background-color: #e0e0e0;
 }
 
 /* Image */
